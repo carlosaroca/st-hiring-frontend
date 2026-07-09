@@ -1,6 +1,6 @@
 # Eventim Frontend Test
 
-Welcome to the Eventim frontend test for new hires (Mid Level). The purpose of this test is to build a React UI that integrates with the backend API.
+Welcome to the Eventim frontend test for new hires (Senior Level). The purpose of this test is to build a React UI that integrates with the backend API, with ownership over testing and code quality.
 
 ## Tech Stack
 
@@ -11,7 +11,7 @@ Welcome to the Eventim frontend test for new hires (Mid Level). The purpose of t
 - Redux Toolkit
 - Formik + Yup
 
-All dependencies are already installed — no need to add them.
+MUI, Redux Toolkit, Formik, and Yup are already installed — no need to add them.
 
 ## Requirements
 
@@ -30,13 +30,13 @@ The Vite dev server proxies `/events` and `/settings` to the backend automatical
 
 ## Tasks
 
-### 1. Events list
+### 1. Events list with pagination
 
-Consume `GET /events` from the backend and display the list of events. Each event should show its relevant information.
+Consume `GET /events` from the backend and display the list of events with pagination controls (the backend supports page and page size parameters). Each event should show its relevant information.
 
 - Use MUI components to build the UI
 - The layout should be responsive
-- Use Redux to manage the events state
+- Use Redux to manage the events state and pagination state
 
 ### 2. Settings form
 
@@ -46,3 +46,11 @@ Build a form that reads and updates a settings object via the backend API (`GET 
 - The layout should be responsive
 - Use Redux to manage the settings state
 - Use Formik for the form and Yup for validation
+
+### 3. Code quality
+
+Review the existing frontend code before submitting. If you find anything you would change or improve, do it. In your pull request description, explain what you changed and why.
+
+### 4. Tests
+
+All new components and Redux logic must have unit tests. A testing library is not pre-installed — choose one, integrate it, and use it.
