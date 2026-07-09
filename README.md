@@ -1,18 +1,48 @@
-# See Tickets Frontend challenge
+# Eventim Frontend Test
 
-This project is a React application designed for a technical interview. The main objective is to create a user interface that interacts with a Node.js backend through various endpoints. The application will demonstrate the use of state management, forms, and UI frameworks such as Material-UI (MUI).
+Welcome to the Eventim frontend test for new hires (Mid Level). The purpose of this test is to build a React UI that integrates with the backend API.
 
-## Task
+## Tech Stack
 
-Create a single UI that consumes the endpoint `GET /events` from the backend API provided and shows a list of events returned by the API with the information of each event. Use components from MUI to create the UI.
+- Node 22
+- React 18 + TypeScript
+- Vite
+- MUI (Material UI v5)
+- Redux Toolkit
+- Formik + Yup
 
-- Use MUI to build a simple UI
-- The UI should be responsive
-- Use Redux as a store management
+All dependencies are already installed — no need to add them.
 
-Create a form to update a settings object in the provided API (This API is part of the backend test)
+## Requirements
 
-- Use MUI to build a simple Form
-- The UI should be responsive
-- Use Redux as a store management
-- Use formik as the form components
+- NVM (to switch to the correct Node version)
+- The backend API must be running on `http://localhost:3000` before you start the frontend
+
+## Setup
+
+1. Fork this repository into your own GitHub account
+2. Clone the fork to your machine
+3. Run `nvm use` to switch to the correct Node version
+4. Run `yarn install` to install dependencies
+5. Run `yarn dev` to start the development server
+
+The Vite dev server proxies `/events` and `/settings` to the backend automatically, so no extra configuration is needed.
+
+## Tasks
+
+### 1. Events list
+
+Consume `GET /events` from the backend and display the list of events. Each event should show its relevant information.
+
+- Use MUI components to build the UI
+- The layout should be responsive
+- Use Redux to manage the events state
+
+### 2. Settings form
+
+Build a form that reads and updates a settings object via the backend API (`GET /settings` and `POST /settings`).
+
+- Use MUI components to build the form
+- The layout should be responsive
+- Use Redux to manage the settings state
+- Use Formik for the form and Yup for validation
